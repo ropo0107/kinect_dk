@@ -1,0 +1,5 @@
+add_test( record_ut.new_clusters_in_order /home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/bin/record_ut [==[--gtest_filter=record_ut.new_clusters_in_order]==] --gtest_also_run_disabled_tests [==[--gtest_output=xml:TEST-record_ut.xml]==])
+set_tests_properties( record_ut.new_clusters_in_order PROPERTIES WORKING_DIRECTORY /home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/bin/. LABELS unit ENVIRONMENT [==[K4A_LOG_LEVEL=I]==] ENVIRONMENT [==[K4A_ENABLE_LOG_TO_STDOUT=1]==])
+add_test( record_ut.new_cluster_out_of_order /home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/bin/record_ut [==[--gtest_filter=record_ut.new_cluster_out_of_order]==] --gtest_also_run_disabled_tests [==[--gtest_output=xml:TEST-record_ut.xml]==])
+set_tests_properties( record_ut.new_cluster_out_of_order PROPERTIES WORKING_DIRECTORY /home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/bin/. LABELS unit ENVIRONMENT [==[K4A_LOG_LEVEL=I]==] ENVIRONMENT [==[K4A_ENABLE_LOG_TO_STDOUT=1]==])
+set( record_ut_TESTS record_ut.new_clusters_in_order record_ut.new_cluster_out_of_order)

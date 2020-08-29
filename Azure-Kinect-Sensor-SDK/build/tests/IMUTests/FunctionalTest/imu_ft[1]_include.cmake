@@ -1,0 +1,5 @@
+if(EXISTS "/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/IMUTests/FunctionalTest/imu_ft[1]_tests.cmake")
+  include("/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/IMUTests/FunctionalTest/imu_ft[1]_tests.cmake")
+else()
+  add_test(imu_ft_NOT_BUILT imu_ft_NOT_BUILT)
+endif()

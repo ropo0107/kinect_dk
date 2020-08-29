@@ -1,0 +1,5 @@
+if(EXISTS "/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/projections/cpp/cpp_projection_ft[1]_tests.cmake")
+  include("/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/projections/cpp/cpp_projection_ft[1]_tests.cmake")
+else()
+  add_test(cpp_projection_ft_NOT_BUILT cpp_projection_ft_NOT_BUILT)
+endif()

@@ -1,0 +1,5 @@
+if(EXISTS "/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/throughput/throughput_perf[1]_tests.cmake")
+  include("/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/throughput/throughput_perf[1]_tests.cmake")
+else()
+  add_test(throughput_perf_NOT_BUILT throughput_perf_NOT_BUILT)
+endif()

@@ -1,0 +1,5 @@
+if(EXISTS "/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/UnitTests/allocator_ut/allocator_ut[1]_tests.cmake")
+  include("/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/UnitTests/allocator_ut/allocator_ut[1]_tests.cmake")
+else()
+  add_test(allocator_ut_NOT_BUILT allocator_ut_NOT_BUILT)
+endif()

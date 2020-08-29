@@ -1,0 +1,5 @@
+if(EXISTS "/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/UnitTests/queue_ut/queue_ut[1]_tests.cmake")
+  include("/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/UnitTests/queue_ut/queue_ut[1]_tests.cmake")
+else()
+  add_test(queue_ut_NOT_BUILT queue_ut_NOT_BUILT)
+endif()

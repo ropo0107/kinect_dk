@@ -1,0 +1,5 @@
+add_test( logging_ut.callback /home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/bin/logging_ut [==[--gtest_filter=logging_ut.callback]==] --gtest_also_run_disabled_tests [==[--gtest_output=xml:TEST-logging_ut.xml]==])
+set_tests_properties( logging_ut.callback PROPERTIES WORKING_DIRECTORY /home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/bin/. LABELS unit ENVIRONMENT [==[K4A_LOG_LEVEL=I]==] ENVIRONMENT [==[K4A_ENABLE_LOG_TO_STDOUT=1]==])
+add_test( logging_ut.callback_threading /home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/bin/logging_ut [==[--gtest_filter=logging_ut.callback_threading]==] --gtest_also_run_disabled_tests [==[--gtest_output=xml:TEST-logging_ut.xml]==])
+set_tests_properties( logging_ut.callback_threading PROPERTIES WORKING_DIRECTORY /home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/bin/. LABELS unit ENVIRONMENT [==[K4A_LOG_LEVEL=I]==] ENVIRONMENT [==[K4A_ENABLE_LOG_TO_STDOUT=1]==])
+set( logging_ut_TESTS logging_ut.callback logging_ut.callback_threading)

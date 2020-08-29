@@ -1,0 +1,5 @@
+add_test( global_ft.global_init_singlethread /home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/bin/global_ft [==[--gtest_filter=global_ft.global_init_singlethread]==] --gtest_also_run_disabled_tests [==[--gtest_output=xml:TEST-global_ft.xml]==])
+set_tests_properties( global_ft.global_init_singlethread PROPERTIES WORKING_DIRECTORY /home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/bin/. LABELS functional ENVIRONMENT [==[K4A_LOG_LEVEL=I]==] ENVIRONMENT [==[K4A_ENABLE_LOG_TO_STDOUT=1]==])
+add_test( global_ft.global_init_multithread /home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/bin/global_ft [==[--gtest_filter=global_ft.global_init_multithread]==] --gtest_also_run_disabled_tests [==[--gtest_output=xml:TEST-global_ft.xml]==])
+set_tests_properties( global_ft.global_init_multithread PROPERTIES WORKING_DIRECTORY /home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/bin/. LABELS functional ENVIRONMENT [==[K4A_LOG_LEVEL=I]==] ENVIRONMENT [==[K4A_ENABLE_LOG_TO_STDOUT=1]==])
+set( global_ft_TESTS global_ft.global_init_singlethread global_ft.global_init_multithread)

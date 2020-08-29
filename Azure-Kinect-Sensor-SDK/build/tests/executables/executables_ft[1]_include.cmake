@@ -1,0 +1,5 @@
+if(EXISTS "/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/executables/executables_ft[1]_tests.cmake")
+  include("/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/executables/executables_ft[1]_tests.cmake")
+else()
+  add_test(executables_ft_NOT_BUILT executables_ft_NOT_BUILT)
+endif()

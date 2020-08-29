@@ -1,0 +1,5 @@
+if(EXISTS "/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/Calibration/calibration_ut[1]_tests.cmake")
+  include("/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/Calibration/calibration_ut[1]_tests.cmake")
+else()
+  add_test(calibration_ut_NOT_BUILT calibration_ut_NOT_BUILT)
+endif()

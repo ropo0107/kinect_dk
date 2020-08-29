@@ -1,0 +1,5 @@
+if(EXISTS "/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/RecordTests/UnitTest/playback_ut[1]_tests.cmake")
+  include("/home/sunshine/workspace/kinect_dk/Azure-Kinect-Sensor-SDK/build/tests/RecordTests/UnitTest/playback_ut[1]_tests.cmake")
+else()
+  add_test(playback_ut_NOT_BUILT playback_ut_NOT_BUILT)
+endif()
