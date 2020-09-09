@@ -1,4 +1,5 @@
-# SDK
+# Ubuntu 16.04 use kinect dk
+## SDK
 1.git
 > git clone -b v1.2.0 https://github.com/microsoft/Azure-Kinect-Sensor-SDK.git
 > mkdir kinect_ws/src && cd kinect_ws/src
@@ -49,7 +50,8 @@
 6.
 > k4aviewer: error while loading shared libraries: libk4a.so.1.2: cannot open shared object file: No such file or directory
 > sudo ln -s /usr/local/lib/libk4a.so.1.2 /usr/lib/libk4a.so.1.2
-# ROS
+
+## ROS
 
 > kinect_ws/src/Azure_Kinect_ROS_Driver
 > mkdir ext/sdk/
@@ -58,14 +60,15 @@ ERROR：
 k4a_ros_device.h:166:8: error: ‘atomic_int64_t’ in namespace ‘std’ does not name a type
 std::atomic_int64_t last_capture_time_usec_;
 
-line:165
-// Last capture timestamp for synchronizing playback capture and imu thread
-std::atomic<int64_t> last_capture_time_usec_;
+```
+    line:165
+    // Last capture timestamp for synchronizing playback capture and imu thread
+    std::atomic<int64_t> last_capture_time_usec_;
 
-// Last imu timestamp for synchronizing playback capture and imu thread
-std::atomic<uint64_t> last_imu_time_usec_;
-std::atomic<bool> imu_stream_end_of_file_;
-
+    // Last imu timestamp for synchronizing playback capture and imu thread
+    std::atomic<uint64_t> last_imu_time_usec_;
+    std::atomic<bool> imu_stream_end_of_file_;
+```
 
 https://packages.microsoft.com/ubuntu/18.04/prod/pool/main/libk/
 
